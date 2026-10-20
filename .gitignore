@@ -1,0 +1,12 @@
+.env
+venv/
+__pycache__/
+*.py[cod]
+instance/*.db
+
+
+# Uploaded test files
+uploads/
+
+# Local database
+instance/

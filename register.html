@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudVault Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef3f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+        }
+
+        .container {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            text-align: center;
+            width: 320px;
+            box-shadow: 0 4px 15px #0001;
+        }
+
+        h1 {
+            color: #2457a7;
+        }
+
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+        }
+
+        button {
+            background: #2457a7;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CloudVault</h1>
+        <p>Create your account</p>
+
+        <form action="/register" method="POST">
+            <input type="text" name="username"
+                   placeholder="Choose a username" required>
+
+            <input type="password" name="password"
+                   placeholder="Choose a password" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p>Already registered? <a href="/login">Login</a></p>
+    </div>
+</body>
+</html>
